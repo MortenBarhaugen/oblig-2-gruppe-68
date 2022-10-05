@@ -12,8 +12,21 @@ public class test {
         System.out.println(liste2.toString());
         System.out.println(liste2.omvendtString());
 
-        String[] s3 = {};
+        String[] s3 = {"A", "B"};
         DobbeltLenketListe<String> liste3 = new DobbeltLenketListe<>(s3);
-        System.out.println(liste3.antall() + " " + liste3.tom());
+        System.out.println(liste3.toString() + " " + liste3.omvendtString());
+
+        System.out.println(liste2.indeksTil("F"));
+        System.out.println(liste2.indeksTil("D"));
+        System.out.println(liste2.inneholder("F"));
+        System.out.println(liste2.inneholder("D"));
+
+        liste3.leggInn( "Z");
+        System.out.println(liste3.toString());
+
+        String[] s4 = {};
+        DobbeltLenketListe<String> liste4 = new DobbeltLenketListe<>(s4);
+        liste4.leggInn("Q");
+        System.out.println(liste4);
     }
 }
